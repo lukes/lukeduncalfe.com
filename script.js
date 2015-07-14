@@ -22,7 +22,7 @@ var rgba = function() {
 
 (function setTitleMargin() {
   var h1 = document.getElementsByTagName('h1')[0];
-  var v = 0 - Math.round(Math.random() * 7);
+  var v = 0 - (Math.random() * 7);
   h1.style.letterSpacing = v + 'vw';
   setTimeout(setTitleMargin, time);
 })();
