@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Exo:100);
+@import url(http://fonts.googleapis.com/css?family=Exo:100,300);
 
 body {
   transition: background-color 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -26,4 +26,10 @@ h1 {
   color: white;
 }
 
-
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 11vw;
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+  }
+}
