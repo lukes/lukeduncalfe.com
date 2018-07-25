@@ -1,28 +1,28 @@
-var time = 2000;
+const time = 2000;
 
-var rgba = function() {
-  var a = [];
-  for (var i = 0; i < 3; i++ ) {
+const rgba = function() {
+  const a = [];
+  for (let i = 0; i < 3; i++ ) {
     a.push(Math.round(Math.random() * 255));
   }
   return 'rgba(' + a.join(',') + ', .3)';
 };
 
 (function setBodyBackground() {
-  var body = document.getElementsByTagName('body')[0];
+  const body = document.getElementsByTagName('body')[0];
   body.style.backgroundColor = rgba();
   setTimeout(setBodyBackground, time);
 })();
 
 (function setTitleColor() {
-  var h1 = document.getElementsByTagName('h1')[0];
+  const h1 = document.getElementsByTagName('h1')[0];
   h1.style.color = rgba();
   setTimeout(setTitleColor, time);
 })();
 
 (function setTitleMargin() {
-  var h1 = document.getElementsByTagName('h1')[0];
-  var v = 1 - (Math.random() * 6);
+  const h1 = document.getElementsByTagName('h1')[0];
+  const v = 1 - (Math.random() * 6);
   h1.style.letterSpacing = v + 'vw';
   setTimeout(setTitleMargin, time);
 })();
